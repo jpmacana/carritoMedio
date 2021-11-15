@@ -7,88 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
 
-    <title>Mercado Compuesto</title>
+    <title>Mercado Medio</title>
 </head>
 
 <body>
 
     <main class="container mt-5">
-
         <div class="row text-center">
-
-            <article class="col-sm4 mb-3">
+            <article class="col-sm-4 mb-3">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-tittle">Pizza🍕</h5>
-                        <p class="lead">$800</p>
-                        <button class="btn btn-outline-primary" data-comida="Pizza" data-precio="600">Agregar</button>
+                        <h5 class="card-title">Pizza🍕</h5>
+                        <p class="lead">$600</p>
+                        <button class="btn btn-primary btn-sm" data-comida="Pizza" data-precio="600">Agregar</button>
                     </div>
                 </div>
             </article>
-
-            <article class="col-sm4 mb-3">
+            <article class="col-sm-4 mb-3">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-tittle">Hamburguesa🍔</h5>
+                        <h5 class="card-title">Hamburguesa🍔</h5>
                         <p class="lead">$750</p>
-                        <button class="btn btn-outline-primary" data-comida="Hamburguesa" data-precio="700">Agregar</button>
+                        <button class="btn btn-primary btn-sm" data-comida="Hamburguesa" data-precio="750">Agregar</button>
                     </div>
                 </div>
             </article>
-
-            <article class="col-sm4 mb-3">
+            <article class="col-sm-4 mb-3">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-tittle ">Papas Fritas 🍟</h5>
-                        <p class="lead ">$500</p>
-                        <button class="btn btn-outline-primary " data-comida="Papas " data-precio="500 ">Agregar</button>
+                        <h5 class="card-title">Papitas🍟</h5>
+                        <p class="lead">$500</p>
+                        <button class="btn btn-primary btn-sm" data-comida="Papitas" data-precio="500">Agregar</button>
                     </div>
                 </div>
             </article>
-
-
-
-
-
         </div>
-
-
     </main>
 
-    <section class="container mt-3 ">
-        <ul class="list-group " id="carrito ">
-
-        </ul>
+    <section class="container mt-3">
+        <ul class="list-group" id="carrito"></ul>
     </section>
 
-    <footer id="footer " class="container mt-3 ">
-
+    <footer id="footer" class="container mt-3">
         <template id="templateFooter">
-            
-            <div class="card-body d-flex justify-content-between align-content-center ">
-                <p class="lead mb-0 ">Total $<span>1500</span> </p>
-                <button class="btn btn-outline-primary ">Finalizar Compra</button>
-    
+            <div class="card">
+                <div class="card-body d-flex justify-content-between align-items-center">
+                    <p class="lead mb-0">TOTAL: $<span></span></p>
+                    <button class="btn btn-outline-primary">Finalizar Compra</button>
+                </div>
             </div>
         </template>
-
-
-
     </footer>
 
+    <template id="template">
+        <li class="list-group-item text-uppercase bg-secondary text-white">
+            <span class="badge bg-primary rounded-pill align-middle">14</span>
+            <span class="lead align-middle">A list item</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div>
+                <p class="lead mb-0">Total: $<span class="total">200</span></p>
+            </div>
+            <div>
+                <button class="btn btn-sm btn-success">Agregar</button>
+                <button class="btn btn-sm btn-danger">Quitar</button>
+            </div>
+        </li>
+    </template>
 
-    <template id="template "> 
-        <li class="list-group-item d-flex justify-content-between align-items-center ">
-                <span class="lead "></span>
-                <span class="badge bg-primary rounded-pill "></span>
-            </li>
-</template>
-
-    <script src="js/app.js "></script>
-
-
-
-
+    <script src="js/app.js"></script>
 </body>
 
 </html>
